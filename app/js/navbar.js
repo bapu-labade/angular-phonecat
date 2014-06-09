@@ -1,10 +1,18 @@
 
-var navbarControllers = angular.module('navbarControllers', []);
+var navbarController = angular.module('NavbarController', []);
 
-navbarControllers.controller('navbarControllers', ['$scope','$location',
-  function($scope, $location) {
-    $scope.about_us = function (){
-    	alert("hi");
-    	$location.url = '/partials/about-us.html'
-    }
+navbarController.controller('NavbarController', ['$scope', function($scope) {
+  
+  // function  to apply active class for Nav bar options
+  $scope.code = 1;
+
+  $scope.setTab = function(code){
+    $scope.code = code;
+    console.log($scope.code);
+  }
+
+  $scope.isSet = function(code){
+    return $scope.code == code ;
+  }
+
   }]);
