@@ -8,7 +8,8 @@ var phonecatApp = angular.module('phonecatApp', [
 
   'phonecatControllers',
   'phonecatFilters',
-  'phonecatServices'
+  'phonecatServices',
+  'navbarControllers'
 ]);
 
 phonecatApp.config(['$routeProvider',
@@ -21,6 +22,12 @@ phonecatApp.config(['$routeProvider',
       when('/phones/:phoneId', {
         templateUrl: 'partials/phone-detail.html',
         controller: 'PhoneDetailCtrl'
+      }).
+      when('/about-us',{
+        templateUrl: 'partials/about-us.html'
+      }).
+      when('/contact-us',{
+        templateUrl: 'partials/contact-us.html'
       }).
       otherwise({
         redirectTo: '/phones'

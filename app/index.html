@@ -17,11 +17,39 @@
   <script src="js/controllers.js"></script>
   <script src="js/filters.js"></script>
   <script src="js/services.js"></script>
+  <script src="js/navbar.js"></script>
+  
 </head>
 <body>
 
+    <!-- =================== Navigation bar =================== -->
+     <div class="navbar-wrapper" ng-controller='navbarControllers'>
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Google photo gallery</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#/about-us">About</a></li>
+                <li><a href="#/contact-us">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   <div class="view-container">
-    <div ng-view class="view-frame"></div>
+    <div ng-view class="view-frame col-md-10 centering"></div>
   </div>
 
 </body>
