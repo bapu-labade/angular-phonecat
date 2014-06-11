@@ -1,1 +1,32 @@
 <h1> Contact us </h1>
+<br/>
+<div class="row">
+		<div ng-controller="otherController">
+		  <div class="col-md-4 col-md-offset-2">
+				<ul>
+					<li>
+						<a herf="" ng-click="setTab(1)">General</a>
+					</li>
+					<li>
+						<a href="" ng-click="setTab(2)">Official</a>
+					</li>
+					<li>
+						<a href="" ng-click="setTab(3)">Business</a>
+					</li>
+				</ul>
+      </div>
+	    <div class="col-md-4"> 
+				<div ng-show="isSet(1)">
+				  <p> General.......................</p>
+				</div>
+
+				<div ng-show="isSet(2)">
+				  <p> Official......................</p>
+				</div>
+
+				<div ng-show="isSet(3)">
+				  <p> Business .....................</p>
+				</div>
+			</div>
+	</div>
+<div>

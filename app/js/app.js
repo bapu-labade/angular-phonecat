@@ -9,7 +9,8 @@ var phonecatApp = angular.module('phonecatApp', [
   'phonecatControllers',
   'phonecatFilters',
   'phonecatServices',
-  'NavbarController'
+  'NavbarController',
+  'otherController'
 ]);
 
 phonecatApp.config(['$routeProvider',
