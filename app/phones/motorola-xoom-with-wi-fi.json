@@ -61,5 +61,8 @@
     "storage": {
         "flash": "32000MB", 
         "ram": "1000MB"
+    },
+    "review": {
+        
     }
 }
